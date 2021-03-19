@@ -11,3 +11,7 @@
     box-sizing: border-box;
     color: inherit;
 }
+
+.rows tr:nth-child(even){
+    background-color: #f2f2f2;
+}

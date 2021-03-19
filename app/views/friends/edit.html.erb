@@ -4,12 +4,7 @@
     <%= render 'form', friend: @friend %>
 
     <div class="flex items-center w-full lg:w-1/6">
-        <button class="font-bold w-full mx-auto rounded bg-gray-500 mr-2 text-white text-sm hover:bg-gray-600">
-            <%= link_to 'Show', @friend, class: " block w-full py-2 focus:outline-none" %>
-        </button>
-
-        <button class="font-bold w-full mx-auto rounded bg-gray-700 text-white text-sm hover:bg-gray-800">
-            <%= link_to 'Back', friends_path, class: "block w-full py-2 focus:outline-none" %>
-        </button>
+        <%= link_to 'Show', @friend, class: "block text-center p-2 w-full mx-auto rounded bg-gray-500 text-white text-sm lg:mr-2 hover:bg-gray-600 focus:outline-none" %>
+        <%= link_to 'Back', friends_path, class: "block text-center p-2 w-full mx-auto rounded bg-gray-700 text-white text-sm hover:bg-gray-800 focus:outline-none" %>
     </div>
 </div>

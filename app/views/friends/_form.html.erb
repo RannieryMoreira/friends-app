@@ -9,7 +9,7 @@
         <% end %>
       </ul>
     </div>
-  <% end %>
+<% end %>
 
   <div class="field">
     <%= form.text_field :first_name, class:"w-full text-sm border border-solid border-gray-400 p-2 mb-8 rounded focus:outline-none", placeholder: "First name"%>
@@ -31,7 +31,7 @@
     <%= form.text_field :twitter, class:"w-full text-sm border border-solid border-gray-400 p-2 mb-8 rounded focus:outline-none", placeholder: "Twitter"%>
   </div>
 
-  <button class="w-full mb-4 p-2 mx-auto rounded text-sm bg-gray-700 text-white hover:bg-gray-800 md:px-2 lg:mx-0 lg:w-1/6">
-    <%= form.submit class: "bg-transparent font-bold cursor-pointer"%>
-  </button>
+  <div class="actions">
+    <%= form.submit class: "w-full mb-4 p-2 mx-auto rounded text-sm bg-gray-700 text-white cursor-pointer focus:outline-none hover:bg-gray-800 md:px-2 lg:mx-0 lg:w-1/6"%>
+  </div>
 <% end %>
