@@ -1,29 +1,49 @@
-<p id="notice"><%= notice %></p>
+<div class="container mx-auto">
+  <div class="bg-gray-200 px-8 p-16 w-full rounded">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @friend.first_name %>
-</p>
+    <div class="w-full flex items-center justify-center md:justify-start mb-4">
+      <p class="text-5xl font-normal mr-2 text-gray-700">
+        <%= @friend.first_name %>
+      </p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @friend.last_name %>
-</p>
+      <p class="text-5xl font-normal text-gray-700">
+        <%= @friend.last_name%>
+      </p>
+    </div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @friend.email %>
-</p>
+    <div class="w-full flex items-center justify-center mb-4 text-base text-gray-600 md:text-lg md:justify-start">
+      <p class="mr-2">
+        <%= @friend.email %>
+      </p>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @friend.phone %>
-</p>
+      <p class="mr-2">
+        |
+      </p>
 
-<p>
-  <strong>Twitter:</strong>
-  <%= @friend.twitter %>
-</p>
+      <p class="mr-2">
+        <%= @friend.phone %>
+      </p>
 
-<%= link_to 'Edit', edit_friend_path(@friend) %> |
-<%= link_to 'Back', friends_path %>
+      <p class="mr-2">
+        |
+      </p>
+
+      <p>
+        <%= @friend.twitter %>
+      </p>
+    </div>
+
+    <div class="border-t border-solid border-gray-400 mb-8"></div>
+
+    <div class=" w-full md:flex md:items-center md:w-1/5">
+      <button class="font-bold w-full mx-auto rounded bg-gray-500 mr-2 mb-2 text-white text-sm md:mb-0 hover:bg-gray-600 focus:outline-none">
+        <%= link_to 'Edit', edit_friend_path(@friend), class: "focus:outline-none block w-full p-2" %>
+      </button>
+
+      <button class="font-bold w-full mx-auto rounded bg-gray-700 text-white text-sm hover:bg-gray-800 focus:outline-none">
+        <%= link_to 'Back', friends_path, class: "block w-full p-2" %>
+      </button>
+    </div>
+  </div>
+</div>

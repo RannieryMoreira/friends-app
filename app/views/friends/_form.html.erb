@@ -12,31 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+    <%= form.text_field :first_name, class:"w-full text-sm border border-solid border-gray-400 p-2 mb-8 rounded focus:outline-none", placeholder: "First name"%>
   </div>
 
   <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+    <%= form.text_field :last_name, class:"w-full text-sm border border-solid border-gray-400 p-2 mb-8 rounded focus:outline-none", placeholder: "Last name"%>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class:"w-full text-sm border border-solid border-gray-400 p-2 mb-8 rounded focus:outline-none", placeholder: "E-mail"%>
   </div>
 
   <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone %>
+    <%= form.text_field :phone, class:"w-full text-sm border border-solid border-gray-400 p-2 mb-8 rounded focus:outline-none", placeholder: "Phone"%>
   </div>
 
   <div class="field">
-    <%= form.label :twitter %>
-    <%= form.text_field :twitter %>
+    <%= form.text_field :twitter, class:"w-full text-sm border border-solid border-gray-400 p-2 mb-8 rounded focus:outline-none", placeholder: "Twitter"%>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <button class="w-full mb-4 p-2 mx-auto rounded text-sm bg-gray-700 text-white hover:bg-gray-800 md:px-2 lg:mx-0 lg:w-1/6">
+    <%= form.submit class: "bg-transparent font-bold cursor-pointer"%>
+  </button>
 <% end %>

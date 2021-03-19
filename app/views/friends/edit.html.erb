@@ -1,6 +1,15 @@
-<h1>Editing Friend</h1>
+<div class="container mx-auto">
+    <h1 class="text-2xl w-full text-gray-700 my-4 text-center md:w-auto md:text-left">Editing Friend</h1>
 
-<%= render 'form', friend: @friend %>
+    <%= render 'form', friend: @friend %>
 
-<%= link_to 'Show', @friend %> |
-<%= link_to 'Back', friends_path %>
+    <div class="flex items-center w-full lg:w-1/6">
+        <button class="font-bold w-full mx-auto rounded bg-gray-500 mr-2 text-white text-sm hover:bg-gray-600">
+            <%= link_to 'Show', @friend, class: " block w-full py-2 focus:outline-none" %>
+        </button>
+
+        <button class="font-bold w-full mx-auto rounded bg-gray-700 text-white text-sm hover:bg-gray-800">
+            <%= link_to 'Back', friends_path, class: "block w-full py-2 focus:outline-none" %>
+        </button>
+    </div>
+</div>
